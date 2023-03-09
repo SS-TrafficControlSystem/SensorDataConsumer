@@ -1,18 +1,20 @@
 package com.atc.sensor.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 
 @Data
-@AllArgsConstructor
-@Builder
 @ToString
+@Document(collection = "sensorData")
 public class SensorData {
 
+    public SensorData(){}
+
+    @Id
     private String sensorId;
     private SensorType sensorType;
     private LocalDateTime timestamp;
