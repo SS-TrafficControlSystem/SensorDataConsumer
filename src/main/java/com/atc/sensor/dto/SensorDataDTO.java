@@ -8,6 +8,7 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import lombok.Data;
 import lombok.ToString;
+import unit.client.Unit;
 
 import java.time.LocalDateTime;
 
@@ -24,6 +25,7 @@ public SensorDataDTO(){}
     private LocalDateTime timestamp;
     private boolean available;
     private String dataValue;
+    private Unit unit;
 
     public SensorData getMongoEntity(){
         SensorData sensorData = new SensorData();

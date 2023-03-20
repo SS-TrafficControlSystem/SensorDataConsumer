@@ -1,4 +1,4 @@
-package com.atc.sensor.feign;
+package unit.client;
 
 import lombok.Data;
 
