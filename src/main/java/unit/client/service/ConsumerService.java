@@ -1,4 +1,4 @@
-package unit.service;
+package unit.client.service;
 
 import com.atc.sensor.dto.SensorDataDTO;
 
@@ -6,8 +6,8 @@ import java.util.List;
 
 public interface ConsumerService {
 
-    public List<SensorDataDTO> getAll();
+     List<SensorDataDTO> getAll();
 
-    public SensorDataDTO getById(Long id);
+     SensorDataDTO getById(Long id);
 
 }

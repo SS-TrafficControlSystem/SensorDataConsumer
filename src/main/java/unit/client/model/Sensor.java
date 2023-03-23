@@ -1,4 +1,4 @@
-package unit.client;
+package unit.client.model;
 
 import lombok.Data;
 

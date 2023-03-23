@@ -1,4 +1,4 @@
-package unit.service;
+package unit.client.service;
 
 import com.atc.sensor.dto.SensorDataDTO;
 import com.atc.sensor.model.SensorType;
@@ -6,8 +6,7 @@ import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import unit.client.Sensor;
-import unit.client.UnitManagementClient;
+import unit.client.model.Sensor;
 
 import java.util.ArrayList;
 import java.util.HashMap;
